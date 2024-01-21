@@ -27,7 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.commiteeapp.ui.theme.MyApplicationKotlinTheme
+import com.example.commiteeapp.ui.theme. CommiteeAppTheme
 
 class login_screen : ComponentActivity(){
     @OptIn(ExperimentalMaterial3Api::class)
@@ -101,7 +101,7 @@ class login_screen : ComponentActivity(){
     @Preview(showBackground = true)
     @Composable
     fun RegistrationScreenPreview() {
-        MyApplicationKotlinTheme {
+        CommiteeAppTheme  {
             RegistrationScreen()
         }
     }

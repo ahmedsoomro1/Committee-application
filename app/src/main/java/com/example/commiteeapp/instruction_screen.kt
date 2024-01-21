@@ -13,7 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.commiteeapp.ui.theme.MyApplicationKotlinTheme
+import com.example.commiteeapp.ui.theme.CommiteeAppTheme
 
 
 class instruction_screen : ComponentActivity() {
@@ -95,7 +95,7 @@ class instruction_screen : ComponentActivity() {
     @Composable
     @Preview(showBackground = true)
     fun OnboardingScreen2Preview() {
-        MyApplicationKotlinTheme {
+        CommiteeAppTheme  {
             val navController = rememberNavController()
             OnboardingScreen2(navController)
         }

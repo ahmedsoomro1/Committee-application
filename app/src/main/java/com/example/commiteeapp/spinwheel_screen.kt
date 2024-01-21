@@ -1,10 +1,13 @@
 package com.example.commiteeapp
 
+import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material3.*
@@ -18,7 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.commiteeapp.ui.theme.MyApplicationKotlinTheme
+import com.example.commiteeapp.ui.theme. CommiteeAppTheme
 import kotlinx.coroutines.delay
 
 
@@ -219,7 +222,7 @@ class spinwheel_screen: ComponentActivity() {
     @Preview(showBackground = true)
     @Composable
     fun SpinWheelPreview() {
-        MyApplicationKotlinTheme {
+        CommiteeAppTheme  {
             SpinWheel(spinning = true, onResult = {})
         }
     }
